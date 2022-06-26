@@ -10,7 +10,7 @@ module.exports.javascriptPlugin = function (config = {}) {
     name: 'supront-plugin-js',
     transform(code, node) {
       console.log(code, node);
-      if (node.attributes && typeof node.attributes.type === 'undefined') {
+      if (node.attributes && typeof node.attributes.type === 'undefined' && Object.hasOwn(node.attributes, 'src')) {
         build(join(config.base || process.cwd(), node.attributes.src));
         return readFileSync(join(__dirname, 'cache', '0.js')).toString();
       }
