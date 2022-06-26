@@ -1,6 +1,6 @@
 {
   "name": "supront",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "types": "./types",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/kangdongmandoo/supront"
   },
   "dependencies": {
-    "supront-plugin-js": "0.0.0"
+    "supront-plugin-js": "0.0.1"
   },
   "description": "Supront is a html tool for production"
 }
