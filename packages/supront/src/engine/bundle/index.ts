@@ -26,7 +26,7 @@ export default function bundle(html: string, options?: Options) {
 
   opts.target.push(
     { tag: 'script', key: 'src' } /* <script src="..." /> */,
-    { tag: 'link', key: 'href', require: { rel: ['stylesheet'] } } /* <link href="..." rel: "stylesheet" /> */,
+    { tag: 'link', key: 'href', require: { rel: ['stylesheet'] }, replace: 'style' } /* <link href="..." rel: "stylesheet" /> */,
     {
       tag: 'style',
       key: 'src',
@@ -58,9 +58,12 @@ export default function bundle(html: string, options?: Options) {
                   console.log(data);
                 }
               });
+
               n.children.push({ type: 'text', data });
 
               n.attributes[target.key] = null;
+
+              if (target.replace) n.name = target.replace;
             }
           }
         });
