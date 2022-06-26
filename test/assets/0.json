@@ -1,0 +1,27 @@
+[
+  { "type": "DOCTYPE", "data": "<!DOCTYPE html>" },
+  {
+    "type": "tag",
+    "name": "html",
+    "attributes": { "lang": "en" },
+    "children": [
+      {
+        "type": "tag",
+        "name": "head",
+        "attributes": {},
+        "children": [
+          { "type": "tag", "name": "meta", "attributes": { "charset": "UTF-8" }, "children": [] },
+          { "type": "tag", "name": "meta", "attributes": { "http-equiv": "X-UA-Compatible", "content": "IE=edge" }, "children": [] },
+          {
+            "type": "tag",
+            "name": "meta",
+            "attributes": { "name": "viewport", "content": "width=device-width, initial-scale=1.0" },
+            "children": []
+          },
+          { "type": "tag", "name": "title", "attributes": {}, "children": [{ "type": "text", "data": "Document" }] }
+        ]
+      },
+      { "type": "tag", "name": "body", "attributes": {}, "children": [{ "type": "text", "data": "hello" }] }
+    ]
+  }
+]

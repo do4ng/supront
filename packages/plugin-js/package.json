@@ -1,0 +1,9 @@
+{
+  "name": "supront-plugin-js",
+  "version": "0.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "esbuild": "^0.14.47"
+  }
+}
